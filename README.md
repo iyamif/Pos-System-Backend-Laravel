@@ -88,6 +88,9 @@ Ilham Firmansyah
 GitHub: https://github.com/iyamif
 
 ---
+### 📄 License
+Proyek ini dirilis dengan lisensi MIT.
+Silakan gunakan, modifikasi, dan distribusikan secara bebas.
 
 
 
