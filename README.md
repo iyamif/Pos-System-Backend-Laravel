@@ -35,7 +35,6 @@ directory name if you want.
 
 Laravel utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.
 
-    cd YourDirectoryName
     composer install
 
 ### Config file
@@ -50,10 +49,18 @@ Rename or copy `.env.example` file to `.env` 1.`php artisan key:generate` to gen
 1. Migrate database table `php artisan migrate`
 1. `php artisan db:seed`, this will initialize settings and create and admin user for you [email: admin@gmail.com - password: admin123]
 
-### Install Node Dependencies
+### 3. Setup Environment
 
-1. `npm install` to install node dependencies
-1. `npm run dev` for development or `npm run build` for production
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+### 4. Database Migration
+
+```bash
+php artisan migrate --seed
+```
 
 ### Create storage link
 
