@@ -1,7 +1,7 @@
 # Laravel POS – REST API Backend
 
 Backend ini adalah sistem Point of Sale (POS) berbasis **Laravel** dengan arsitektur **REST API** untuk digunakan pada aplikasi mobile atau web POS.  
-Fitur meliputi manajemen produk, stok, supplier, transaksi penjualan, customer, dan laporan.
+Fitur meliputi manajemen produk, inventory, supplier, transaksi penjualan.
 
 ---
 ## 🔧 Tech Stack
@@ -49,7 +49,7 @@ Rename or copy `.env.example` file to `.env` 1.`php artisan key:generate` to gen
 1. Migrate database table `php artisan migrate`
 1. `php artisan db:seed`, this will initialize settings and create and admin user for you [email: admin@gmail.com - password: admin123]
 
-### 3. Setup Environment
+### 2. Setup Environment
 
 ```bash
 cp .env.example .env
@@ -62,140 +62,8 @@ php artisan key:generate
 php artisan migrate --seed
 ```
 
-### Create storage link
-
-`php artisan storage:link`
-
 ### Run Server
 
-1. `php artisan serve` or Laravel Homestead
-1. Visit `localhost:8000` in your browser. Email: `admin@gmail.com`, Password: `admin123`.
- <!-- 1. Online demo: [pos.khmernokor.com](https://pos.khmernokor.com/) -->
+1. `php artisan serve` 
+1. Visit `localhost:8000` in your browser.
 
-### Feature To-Do List
-
-#### 📊 Dashboard
-- [x] Display overall sales summary (total revenue, today's sales, top-selling product)
-
-#### 📦 Products
-- [x] Product list with pagination, search, and category filters
-- [x] Add product form (name, price, stock, image, category)
-- [x] Edit/Delete product actions
-
-#### 🛒 Point Of Sale
-- [x] Responsive POS interface (for desktop & tablet)
-- [x] Add products via barcode scan or name search
-- [x] Display cart with items, quantity
-- [ ] Support multiple payment methods (cash, card, etc.)
-- [ ] Apply discount by specific items
-- [ ] Apply discount by invoice (overall discount)
-- [ ] Print or download sale receipt
-
-#### 📦 Orders
-- [x] List all sales/orders with filters (date)
-    - [ ] Add filter (status, customer)
-- [x] View detailed order/invoice page
-- [ ] Support order returns and refunds
-
-#### 👥 Customers
-- [x] Customer list
-    - [ ] Filter customer with (name, phone and email)
-- [x] Add/Edit customer information (name, phone, email, address)
-- [ ] View customer order history
-
-#### 🚚 Supplier
-- [x] Supplier list
-    - [ ] Filter supplier with (name, phone and email)
-- [x] Add/Edit supplier info (name, phone, email, ...)
-- [ ] View purchase/order history by supplier
-
-#### 📥 Purchase — by [Emre Dikmen](https://github.com/fabyo0)
-- [x] Add purchase form (select supplier, date, invoice number)
-- [x] Add purchased items with quantity and cost
-- [x] Update product stock automatically on purchase
-- [x] View list of purchases with filters (supplier, date)
-- [x] Generate printable purchase receipt (80mm)
-
-#### ⚙️ Settings
-- [x] Store settings (name, currency)
-    - [ ] Add tax config to store setting
-
-
-### Screenshots
-
-#### Product list
-
-![Product list](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/products_list.png)
-
-#### Create order
-
-![Create order](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/pos.png)
-
-#### Order list
-
-![Order list](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/order_list.png)
-
-#### Customer list
-
-![Customer list](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/customer_list.png)
-
-
-# 🌟 Or Khmernokor POS :)
-
-[Khmernokor POS](https://pos.khmernokor.com) is a modern and efficient Point of Sale system tailored for restaurants, cafés, and retail businesses. Built with a focus on usability, speed, and flexibility, it provides an all-in-one solution for front-of-house and back-of-house operations.
-
----
-
-## 🖥️ POS Screen
-![POS Screen](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/khmernokor-pos/pos.png)
-
-The POS interface is clean, responsive, and optimized for quick ordering. Cashiers and servers can easily select items, apply discounts, manage tables, and process various payment methods efficiently.
-
----
-
-## 🖨️ Kitchen Printer
-![Kitchen Printer](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/khmernokor-pos/kitchen-printer.jpg)
-
-Orders placed via the POS are instantly sent to the kitchen printer. This ensures accurate, printed tickets that help kitchen staff prepare dishes quickly and with minimal error.
-
----
-
-## 🍽️ Kitchen Display System (KDS)
-![Kitchen Display](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/khmernokor-pos/kitchen-display.png)
-
-Replace traditional printed tickets with a digital kitchen display. Staff can view and manage incoming orders in real time, mark items as complete, and streamline food preparation.
-
----
-
-## 🧾 Receipt Preview
-![Receipt Preview](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/khmernokor-pos/receipt-preview.png)
-
-Preview and print receipts with detailed breakdowns of items, quantities, discounts, taxes, and total amounts—customizable to suit your business branding.
-
----
-
-## 🖨️ Cashier Printer
-![Cashier Printer](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/khmernokor-pos/cashier-printer.jpg)
-
-Print high-quality receipts at the cashier station for customers upon checkout. Reliable and fast printing supports smooth and professional transactions.
-
----
-
-## 📱 QR Menu for Customers ordering
-<!-- ![QR Menu](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/khmernokor-pos/qr-menu.png) -->
-
-Let customers scan a QR code to view the digital menu on their phones. This contactless feature enhances the dining experience while reducing the need for physical menus.
-
----
-
-## Video Demo on Windows
-[![Watch the video](https://img.youtube.com/vi/4ARl-Ww71Gc/hqdefault.jpg)](https://www.youtube.com/shorts/4ARl-Ww71Gc)
-
-## Video Demo on Mobile
-[![Watch the video](https://img.youtube.com/vi/qqUSv7ab3dk/hqdefault.jpg)](https://www.youtube.com/watch?v=qqUSv7ab3dk)
-
----
-
-Khmernokor POS is your complete solution for managing restaurant operations—from order taking and kitchen coordination to payment and reporting.
-
-🔗 [Explore more at pos.khmernokor.com](https://pos.khmernokor.com)
