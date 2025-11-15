@@ -14,7 +14,7 @@ For system requirements you [Check Laravel Requirement](https://laravel.com/docs
 ### Clone the repository from github.
 
 ```bash
-clone git : 
+clone git : https://github.com/iyamif/Pos-System-Backend-Laravel.git
 ```
 
 The command installs the project in a directory named `YourDirectoryName`. You can choose a different
