@@ -1,6 +1,9 @@
 # Laravel POS – REST API Backend
 
+Backend ini adalah sistem Point of Sale (POS) berbasis **Laravel** dengan arsitektur **REST API** untuk digunakan pada aplikasi mobile atau web POS.  
+Fitur meliputi manajemen produk, stok, supplier, transaksi penjualan, customer, dan laporan.
 
+---
 
 ## Installation
 
@@ -10,7 +13,9 @@ For system requirements you [Check Laravel Requirement](https://laravel.com/docs
 
 ### Clone the repository from github.
 
-    git clone https://github.com/angkosal/laravel-pos.git [YourDirectoryName]
+```bash
+clone git : 
+```
 
 The command installs the project in a directory named `YourDirectoryName`. You can choose a different
 directory name if you want.
