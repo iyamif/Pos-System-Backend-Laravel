@@ -67,5 +67,7 @@ php artisan migrate --seed
 ```bash
 php artisan serve
 ```
-1. Visit `localhost:8000` in your browser.
+Visit `localhost:8000` in your browser.
+
+
 
