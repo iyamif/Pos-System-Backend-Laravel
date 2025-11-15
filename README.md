@@ -4,6 +4,17 @@ Backend ini adalah sistem Point of Sale (POS) berbasis **Laravel** dengan arsite
 Fitur meliputi manajemen produk, stok, supplier, transaksi penjualan, customer, dan laporan.
 
 ---
+## 🔧 Tech Stack
+
+- **Laravel 10+**
+- **PHP 8.1+**
+- **Postgresql**
+- **Laravel Sanctum (Authentication)**
+- **2FA Google Authenticator**
+- **REST API JSON**
+- **Laravel Eloquent ORM**
+
+---
 
 ## Installation
 
@@ -14,7 +25,7 @@ For system requirements you [Check Laravel Requirement](https://laravel.com/docs
 ### Clone the repository from github.
 
 ```bash
-clone git : https://github.com/iyamif/Pos-System-Backend-Laravel.git
+https://github.com/iyamif/Pos-System-Backend-Laravel.git
 ```
 
 The command installs the project in a directory named `YourDirectoryName`. You can choose a different
