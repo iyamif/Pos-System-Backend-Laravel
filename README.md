@@ -31,38 +31,38 @@ https://github.com/iyamif/Pos-System-Backend-Laravel.git
 The command installs the project in a directory named `YourDirectoryName`. You can choose a different
 directory name if you want.
 
-### Install dependencies
+### 1. Install dependencies
 
 Laravel utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.
 
     composer install
 
-### Config file
+### 2. Config file
 
 Rename or copy `.env.example` file to `.env` 1.`php artisan key:generate` to generate app key.
 
 1. Set your database credentials in your `.env` file
 1. Set your `APP_URL` in your `.env` file.
 
-### Database
+### 3. Database
 
 1. Migrate database table `php artisan migrate`
 1. `php artisan db:seed`, this will initialize settings and create and admin user for you [email:kasir@pos.com - password: password123]
 
-### 2. Setup Environment
+### 4. Setup Environment
 
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-### 4. Database Migration
+### 5. Database Migration
 
 ```bash
 php artisan migrate --seed
 ```
 
-### Run Server
+### 6. Run Server
 
 ```bash
 php artisan serve
