@@ -64,6 +64,8 @@ php artisan migrate --seed
 
 ### Run Server
 
-1. `php artisan serve` 
+```bash
+php artisan serve
+```
 1. Visit `localhost:8000` in your browser.
 
