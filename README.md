@@ -4,12 +4,14 @@ Backend ini adalah sistem Point of Sale (POS) berbasis **Laravel** dengan arsite
 Fitur meliputi manajemen produk, inventory, supplier, transaksi penjualan.
 ## 🔰 Badges
 <p align="left">
-  <img src="https://img.shields.io/badge/Flutter-3.x-blue" />
-  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green" />
-  <img src="https://img.shields.io/badge/Backend-Laravel%2010-red" />
+  <img src="https://img.shields.io/badge/Laravel-10.x-red" />
+  <img src="https://img.shields.io/badge/PHP-8.1%2B-blue" />
+  <img src="https://img.shields.io/badge/Database-MySQL%20%7C%20PostgreSQL-green" />
+  <img src="https://img.shields.io/badge/API-REST%20API-orange" />
   <img src="https://img.shields.io/badge/License-MIT-yellow" />
   <img src="https://img.shields.io/github/stars/your-username/your-repo?style=social" />
 </p>
+
 
 ---
 ## 🔧 Tech Stack
