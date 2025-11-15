@@ -68,5 +68,27 @@ php artisan serve
 ```
 Visit `localhost:8000` in your browser.
 
+---
+### 🤝 Contributing
+
+Kontribusi sangat diterima!
+
+---
+### 📝 Changelog
+v1.0.0
+- Release awal
+- Auth + Sanctum
+- 2FA Google Authenticator
+- Product, Inventory, Supplier
+- POS Transaction + history
+
+### 👤 Author
+Ilham Firmansyah
+
+GitHub: https://github.com/iyamif
+
+---
+
+
 
 
