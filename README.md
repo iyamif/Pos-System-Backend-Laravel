@@ -37,13 +37,6 @@ Laravel utilizes [Composer](https://getcomposer.org/) to manage its dependencies
 
     composer install
 
-### Config file
-
-Rename or copy `.env.example` file to `.env` 1.`php artisan key:generate` to generate app key.
-
-1. Set your database credentials in your `.env` file
-1. Set your `APP_URL` in your `.env` file.
-
 ### Setup Environment
 
 ```bash
