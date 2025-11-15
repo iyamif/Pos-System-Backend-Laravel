@@ -51,11 +51,6 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-### Database
-
-1. Migrate database table `php artisan migrate`
-1. `php artisan db:seed`,
-
 ### Database Migration
 
 ```bash
